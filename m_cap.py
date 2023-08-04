@@ -44,8 +44,9 @@ def m_cap_db(name, ticker):
 
     if f"{ticker}" not in csv.columns:
         df = get_m_caps(name, ticker)
-        df = pd.concat([csv, df], ignore_index=True)
-        df.to_csv('market_caps.csv', index=False)
-        return df
+        new_data = df[f"{ticker}"]
+        csv[ticker] = new_data
+        csv.to_csv('market_caps.csv', index=False)
+        return csv
     else:
         return "This ticker is already in db"
