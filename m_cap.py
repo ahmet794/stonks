@@ -2,7 +2,8 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 
-def get_m_caps(name):
+def get_m_caps(name, ticker):
+
     # Send a GET request to the URL
     url = f"https://companiesmarketcap.com/{name}/marketcap/"
     response = requests.get(url)
@@ -23,13 +24,14 @@ def get_m_caps(name):
         year = row.find("td").text.strip()
         market_cap = row.find_all("td")[1].text.strip()
 
+        
         # Append the data to the lists
         years.append(year)
         market_caps.append(market_cap)
 
     data = {
-        "Year": years,
-        "Market Cap": market_caps
+    "Year": years,
+    f"{ticker}": market_caps
     }
 
     df = pd.DataFrame(data)
@@ -37,4 +39,13 @@ def get_m_caps(name):
     return df
 
 
+def m_cap_db(name, ticker):
+    csv = pd.read_csv('market_caps.csv')
 
+    if f"{ticker}" not in csv.columns:
+        df = get_m_caps(name, ticker)
+        df = pd.concat([csv, df], ignore_index=True)
+        df.to_csv('market_caps.csv', index=False)
+        return df
+    else:
+        return "This ticker is already in db"
