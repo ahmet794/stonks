@@ -19,6 +19,7 @@
 		E38948282A81952300FA79B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38948272A81952300FA79B4 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948302A81A51000FA79B4 /* StockRowView.swift */; };
 		E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948352A81A61A00FA79B4 /* StockMarketView.swift */; };
+		E38948382A81A76700FA79B4 /* PortfolioManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948372A81A76700FA79B4 /* PortfolioManagementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E38948272A81952300FA79B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E38948302A81A51000FA79B4 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
 		E38948352A81A61A00FA79B4 /* StockMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketView.swift; sourceTree = "<group>"; };
+		E38948372A81A76700FA79B4 /* PortfolioManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioManagementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		E38948342A81A5C400FA79B4 /* Portfolio Management Views */ = {
 			isa = PBXGroup;
 			children = (
+				E38948372A81A76700FA79B4 /* PortfolioManagementView.swift */,
 			);
 			path = "Portfolio Management Views";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */,
 				E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */,
 				E38947FA2A818E8C00FA79B4 /* ContentView.swift in Sources */,
+				E38948382A81A76700FA79B4 /* PortfolioManagementView.swift in Sources */,
 				E38947F82A818E8C00FA79B4 /* StonkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
