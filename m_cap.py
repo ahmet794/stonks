@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 
 def get_m_caps(name, ticker):
@@ -50,3 +51,16 @@ def m_cap_db(name, ticker):
         return csv
     else:
         return "This ticker is already in db"
+
+def update_chart(stock_data):
+    # Fetch real-time data using yfinance
+    real_time_data = stock_data.history(period="1d")
+
+    # Clear the previous chart and plot the new data
+    plt.clf()
+    plt.plot(real_time_data["Close"])
+    plt.title("Real-Time Stock Price")
+    plt.xlabel("Time")
+    plt.ylabel("Price")
+    plt.grid()
+    plt.pause(10)
