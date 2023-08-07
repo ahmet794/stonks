@@ -7,19 +7,6 @@
 
 import SwiftUI
 
-struct StockRowView: View {
-    let symbol: String
-    let price: String // Change the type to match the actual type of the stock price
-
-    var body: some View {
-        HStack {
-            Text(symbol)
-            Spacer()
-            Text(price)
-        }
-    }
-}
-
 struct ContentView: View {
     @State private var stocks: [String] = ["AAPL", "GOOGL", "MSFT", "AMZN"] // Add your own list of stock symbols here
 

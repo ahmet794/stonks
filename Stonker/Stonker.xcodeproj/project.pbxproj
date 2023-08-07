@@ -17,7 +17,8 @@
 		E38948232A81946200FA79B4 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948222A81946200FA79B4 /* StocksViewController.swift */; };
 		E38948262A81951600FA79B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38948252A81951600FA79B4 /* UIKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Required, ); }; };
 		E38948282A81952300FA79B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38948272A81952300FA79B4 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		E389482B2A81991200FA79B4 /* StocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389482A2A81991200FA79B4 /* StocksView.swift */; };
+		E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948302A81A51000FA79B4 /* StockRowView.swift */; };
+		E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948352A81A61A00FA79B4 /* StockMarketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		E38948222A81946200FA79B4 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		E38948252A81951600FA79B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E38948272A81952300FA79B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E389482A2A81991200FA79B4 /* StocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksView.swift; sourceTree = "<group>"; };
+		E38948302A81A51000FA79B4 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
+		E38948352A81A61A00FA79B4 /* StockMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +108,15 @@
 		E38947F62A818E8C00FA79B4 /* Stonker */ = {
 			isa = PBXGroup;
 			children = (
+				E38948342A81A5C400FA79B4 /* Portfolio Management Views */,
+				E38948332A81A5B600FA79B4 /* Stock Market Views */,
+				E38948322A81A5A000FA79B4 /* Menu View */,
 				E38947F72A818E8C00FA79B4 /* StonkerApp.swift */,
 				E38947F92A818E8C00FA79B4 /* ContentView.swift */,
 				E38947FB2A818E8C00FA79B4 /* Assets.xcassets */,
 				E38947FD2A818E8C00FA79B4 /* Stonker.entitlements */,
 				E38947FE2A818E8C00FA79B4 /* Preview Content */,
 				E38948222A81946200FA79B4 /* StocksViewController.swift */,
-				E389482A2A81991200FA79B4 /* StocksView.swift */,
 			);
 			path = Stonker;
 			sourceTree = "<group>";
@@ -149,6 +153,29 @@
 				E38948252A81951600FA79B4 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38948322A81A5A000FA79B4 /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Menu View";
+			sourceTree = "<group>";
+		};
+		E38948332A81A5B600FA79B4 /* Stock Market Views */ = {
+			isa = PBXGroup;
+			children = (
+				E38948302A81A51000FA79B4 /* StockRowView.swift */,
+				E38948352A81A61A00FA79B4 /* StockMarketView.swift */,
+			);
+			path = "Stock Market Views";
+			sourceTree = "<group>";
+		};
+		E38948342A81A5C400FA79B4 /* Portfolio Management Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Portfolio Management Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38948232A81946200FA79B4 /* StocksViewController.swift in Sources */,
-				E389482B2A81991200FA79B4 /* StocksView.swift in Sources */,
+				E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */,
+				E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */,
 				E38947FA2A818E8C00FA79B4 /* ContentView.swift in Sources */,
 				E38947F82A818E8C00FA79B4 /* StonkerApp.swift in Sources */,
 			);
