@@ -13,27 +13,27 @@ struct MenuView: View {
     
     var body: some View {
         NavigationView{
-            VStack {
-                HStack{
-                    Button("Stock Markets") {
-                        showStockMarketView = true
-                    }
-                    .sheet(isPresented: $showStockMarketView, content: {StockMarketView()
-                    })
-                    Button("Portfolio Management") {
-                        showPortfolioManagementView = true
-                    }
-                    .sheet(isPresented: $showPortfolioManagementView, content: {PortfolioManagementView()
-                    })
+            HStack(spacing: 0){
+                // Left Side
+                Button("Stock Markets") {
+                    showStockMarketView = true
                 }
-                .padding()
-                .foregroundColor(.white)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .sheet(isPresented: $showStockMarketView, content: {StockMarketView()
+                    })
+                .background(Color.gray)
+                // Right Side
+                Button("Portfolio Management") {
+                    showPortfolioManagementView = true
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .sheet(isPresented: $showPortfolioManagementView, content: {PortfolioManagementView()
+                    })
                 .background(Color.blue)
-                .cornerRadius(10)
-                Spacer()
             }
-            .navigationBarTitle("Menu")
+            .foregroundColor(.white)
         }
+        .navigationBarTitle("Menu")
     }
 }
 
