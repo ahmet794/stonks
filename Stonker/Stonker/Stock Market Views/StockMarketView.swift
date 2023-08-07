@@ -13,7 +13,7 @@ struct StockMarketView: View {
     var body: some View {
         VStack{
             List(stocks, id: \.self){ symbol in
-                StockRowView(symbol: symbol, price: "Future feature") // Replace loading in future with prices
+                StockRowView(symbol: symbol, price: "Soon...") // Replace loading in future with prices
             }
         }
         .onAppear() {
@@ -29,3 +29,8 @@ struct StockMarketView: View {
     }
 }
 
+struct StockMarketView_Previews: PreviewProvider {
+    static var previews: some View {
+        StockMarketView()
+    }
+}

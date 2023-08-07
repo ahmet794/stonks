@@ -8,24 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var stocks: [String] = ["AAPL", "GOOGL", "MSFT", "AMZN"] // Add your own list of stock symbols here
-
     var body: some View {
-        VStack {
-            List(stocks, id: \.self) { symbol in
-                StockRowView(symbol: symbol, price: "Loading...") // Replace "Loading..." with the actual stock price from the fetched data
-            }
-        }
-        .onAppear {
-            fetchStockPrices()
-        }
-    }
-
-    func fetchStockPrices() {
-        // Call Python function to fetch stock prices using yfinance (Python integration required)
-        // Update the 'stocks' array with the fetched stock prices
-        // For example, stocks = pythonFunctionToFetchStockPrices()
-        // Make sure to handle any errors and update the UI accordingly
+        MenuView()
     }
 }
 
