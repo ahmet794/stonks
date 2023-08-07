@@ -20,6 +20,7 @@
 		E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948302A81A51000FA79B4 /* StockRowView.swift */; };
 		E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948352A81A61A00FA79B4 /* StockMarketView.swift */; };
 		E38948382A81A76700FA79B4 /* PortfolioManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948372A81A76700FA79B4 /* PortfolioManagementView.swift */; };
+		E389483A2A81A7B600FA79B4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38948392A81A7B600FA79B4 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E38948302A81A51000FA79B4 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
 		E38948352A81A61A00FA79B4 /* StockMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketView.swift; sourceTree = "<group>"; };
 		E38948372A81A76700FA79B4 /* PortfolioManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioManagementView.swift; sourceTree = "<group>"; };
+		E38948392A81A7B600FA79B4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		E38948322A81A5A000FA79B4 /* Menu View */ = {
 			isa = PBXGroup;
 			children = (
+				E38948392A81A7B600FA79B4 /* MenuView.swift */,
 			);
 			path = "Menu View";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E389483A2A81A7B600FA79B4 /* MenuView.swift in Sources */,
 				E38948232A81946200FA79B4 /* StocksViewController.swift in Sources */,
 				E38948362A81A61A00FA79B4 /* StockMarketView.swift in Sources */,
 				E38948312A81A51000FA79B4 /* StockRowView.swift in Sources */,
